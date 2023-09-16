@@ -1,0 +1,114 @@
+body{
+    background-image:url("/static/images/rescue.jpg") ; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.regform{
+    background :transparent;
+    backdrop-filter: blur(3px);
+    color:whitesmoke;
+    border: 5px groove rgb(202, 204, 210);
+    background-color: rgba(14, 78, 174, 0.2);
+    opacity: 2em;
+    padding: 1em;
+    margin:16em auto;
+    text-align: center;
+    width :35em;
+    height: 35em;
+}
+
+.regform h3{
+    font-size: 50px;
+    color:bla;
+    text-align: center;
+    align-items: center;
+}
+#user{
+    font-size: 30px;
+}
+#userid{
+    border-radius: 5px;
+    margin-bottom: 1em;  
+    border-width : 5px;
+    width : 20em;
+    height :25px;
+    
+}
+#password{
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+    margin-right: 5px;
+}
+#psw{
+    border-radius: 5px;
+    margin-bottom : 1em;
+    margin-right: 2em;
+    border-width : 5px;
+    width : 20em;
+    height :25px;
+    
+}
+#psw-repeat{
+    border-radius: 5px;
+    margin-bottom: 1em;
+    border-width : 5px;
+    width : 20em;
+    height :25px;
+
+}
+#repeat{
+    font-size: 30px;
+    text-align: 5px;   
+}
+#enter-email{
+    border-radius: 5px;
+    margin-bottom: 1em;
+    border-width : 5px;
+    width : 20em;
+    height :25px;
+
+}
+#ph_no_lbl{
+    font-size: 30px;
+    text-align: 5px;
+}
+#ph_no_id{
+    border-radius: 5px;
+    margin-bottom: 1em;
+    border-width : 5px;
+    width : 20em;
+    height :25px;
+
+}
+.signup{
+    margin-bottom: 1em;
+    border-width : 3px;
+    width: 7em;
+    height: 50px;
+    color:black;
+    margin-top :20px;
+    font-size: 20px;
+    
+}
+#reset{
+    margin-bottom: 1em;
+    border-width : 3px;
+    width: 7em;
+    height: 50px;
+    color:black;
+    font-size: 20px;
+}
+#email{
+    font-size: 30px;
+}
+.Signin{
+    text-align: center;
+    margin-bottom: 0%;
+    font-size: 20px;
+}
+#page{
+    margin-top:0%;
+    color: brown;
+}

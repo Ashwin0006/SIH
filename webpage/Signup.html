@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescue Agencies</title>
+    <link rel = "stylesheet" href="/static/Signup.css" type = "text/css">
+</head>
+<body>
+    <form class = "regform" method = "post" action="/submit-signup">
+        <h3>Sign up</h3>
+        <div>
+            <label for = "userid" id = "user">User id :</label>
+            <input name = "userid" placeholder = "Enter user id" id ="userid"  minlength="6" required ></input>
+        </div>
+        <div>
+            <label for = "psw" id = "password">Password :</label>
+            <input type="password" placeholder="Enter Password" name="psw" id = "psw" minlength="6" required >
+        </div>
+        <b></b>
+        <div>
+            <label for="psw-repeat" id = "repeat">Confirm Password :</label>
+            <input type="password" placeholder="Repeat Password" name="psw_repeat" id = "psw-repeat"  minlength = "6" required >
+        </div>
+        <div>
+            <label for = "enter email" id = "email">Email :</label>
+            <input type = "email" placeholder= "Enter Email" name = "email_id" id = "enter-email" required >
+        </div>
+        <div>
+            <label for = "enter Phone_NO" id = "ph_no_lbl">Phone Number :</label>
+            <input type = "tel" placeholder= "Enter phone number" name = "ph_no" id = "ph_no_id" required >
+        </div>
+        <div>
+            <button type = "submit" class = "signup" onclick=signup(event)>Sign up</button>
+            <button type = "reset" id = "reset">reset</button>
+        </div>
+        <div class = "Signin">
+            <p>Already have an account? <a href = "/static/Signin.html" id = "page">Sign in</a> </p>
+        </div>
+        <script>
+            function signup(event){
+                let pass = document.getElementById("psw").value;
+                let con_pass = document.getElementById("psw-repeat").value;
+                if(pass != con_pass){
+                    alert('Passwords do not match!');
+                    event.preventDefault();
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>
