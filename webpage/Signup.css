@@ -24,10 +24,10 @@ body{
     text-align: center;
     align-items: center;
 }
-#user{
-    font-size: 30px;
+#Agency_name{
+    font-size: 20px;
 }
-#userid{
+#Agency_name_ip{
     border-radius: 5px;
     margin-bottom: 1em;  
     border-width : 5px;
@@ -35,8 +35,21 @@ body{
     height :25px;
     
 }
+#Agency_id{
+    font-size: 20px;
+}
+
+#Agency_id_ip{
+    border-radius: 5px;
+    margin-bottom: 1em;  
+    border-width : 5px;
+    width : 20em;
+    height :25px;
+
+}
+
 #password{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 5px;
     margin-right: 5px;
@@ -59,7 +72,7 @@ body{
 
 }
 #repeat{
-    font-size: 30px;
+    font-size: 20px;
     text-align: 5px;   
 }
 #enter-email{
@@ -71,7 +84,7 @@ body{
 
 }
 #ph_no_lbl{
-    font-size: 30px;
+    font-size: 20px;
     text-align: 5px;
 }
 #ph_no_id{
@@ -101,7 +114,7 @@ body{
     font-size: 20px;
 }
 #email{
-    font-size: 30px;
+    font-size: 20px;
 }
 .Signin{
     text-align: center;

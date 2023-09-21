@@ -11,8 +11,12 @@
     <form class = "regform" method = "post" action="/submit-signup">
         <h3>Sign up</h3>
         <div>
-            <label for = "userid" id = "user">User id :</label>
-            <input name = "userid" placeholder = "Enter user id" id ="userid"  minlength="6" required ></input>
+            <label for = "Agency_name_ip" id = "Agency_name">Agency Name :</label>
+            <input name = "Agency_name" placeholder = "Enter Agency name" id ="Agency_name_ip" required ></input>
+        </div>
+        <div>
+            <label for = "Agency_id_ip" id = "Agency_id">Agency id :</label>
+            <input name = "Agency_id" placeholder = "Enter Agency id" id ="Agency_id_ip" required ></input>
         </div>
         <div>
             <label for = "psw" id = "password">Password :</label>
@@ -35,9 +39,9 @@
             <button type = "submit" class = "signup" onclick=signup(event)>Sign up</button>
             <button type = "reset" id = "reset">reset</button>
         </div>
-        <div class = "Signin">
+        <!--<div class = "Signin">
             <p>Already have an account? <a href = "/static/Signin.html" id = "page">Sign in</a> </p>
-        </div>
+        </div>-->
         <script>
             function signup(event){
                 let pass = document.getElementById("psw").value;

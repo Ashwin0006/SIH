@@ -39,14 +39,15 @@ app.post('/submit-signup', async (req, res) => {
             connectString: "XE"
         });
 
-        const userId = req.body.userid;
+        const agency_name = req.body.Agency_name;
+        const agency_id = req.body.Agency_id;
         const password_user = req.body.psw;  
         const email_id_usr = req.body.email_id; 
         const phone_number = req.body.ph_no; 
 
         await con.execute(
-            "INSERT INTO users (name, password, email, ph_no) VALUES (:name, :password, :email, :ph_no)",
-            { name: userId, password: password_user, email:email_id_usr, ph_no:phone_number},
+            "INSERT INTO AGENCIES (agency_name, agency_id, password, email, ph_no) VALUES (:name, :id, :password, :email, :ph_no)",
+            { name: agency_name, id: agency_id, password: password_user, email:email_id_usr, ph_no:phone_number},
             { autoCommit: true }
         );
         res.send("Signup successful!");
@@ -74,7 +75,7 @@ app.post('/login', async (req, res) => {
             {
                 name: req.body.username,
                 password: req.body.password
-            }
+            } 
         );
 
         if (result.rows.length > 0) {
